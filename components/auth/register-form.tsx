@@ -8,7 +8,7 @@ import * as z from "zod"
 import { register } from "@/actions/register"
 import { CardWrapper } from "@/components/auth/card-wrapper"
 import { FormError } from "@/components/form-error"
-import { FormWarning } from "@/components/form-warning"
+import { FormSuccess } from "@/components/form-success"
 import { Button } from "@/components/ui/button"
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
@@ -17,7 +17,7 @@ import { RegisterSchema } from "@/schemas"
 export const RegisterForm = () => {
   const [isPending, startTransition] = useTransition()
   const [error, setError] = useState<string | undefined>("")
-  const [warning, setWarning] = useState<string | undefined>("")
+  const [success, setsuccess] = useState<string | undefined>("")
 
   const form = useForm<z.infer<typeof RegisterSchema>>({
     resolver: zodResolver(RegisterSchema),
@@ -30,12 +30,12 @@ export const RegisterForm = () => {
 
   const onSubmit = (values: z.infer<typeof RegisterSchema>) => {
     setError("")
-    setWarning("")
+    setsuccess("")
 
     startTransition(() => {
       register(values).then((response) => {
         setError(response.error)
-        setWarning(response.warning)
+        setsuccess(response.success)
       })
     })
   }
@@ -91,7 +91,7 @@ export const RegisterForm = () => {
             />
           </div>
           <FormError message={error} />
-          <FormWarning message={warning} />
+          <FormSuccess message={success} />
           <Button disabled={isPending} type="submit" className="w-full">
             Create an account
           </Button>

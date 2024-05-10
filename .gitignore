@@ -34,3 +34,7 @@ yarn-error.log*
 /playwright/.cache/
 
 /.npm-only-allow
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/

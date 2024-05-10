@@ -1,10 +1,6 @@
-
-# Next.js Enterprise Boilerplate - With Authentication </br> 
-
+# Next.js Enterprise Boilerplate - With Authentication </br>
 
 Welcome to the _Next.js Enterprise Boilerplate - With Authentication_, an open-source template for enterprise projects! It's loaded with features that'll help you build a high-performance, maintainable, and enjoyable app. We've done all the heavy lifting for you, so sit back, relax, and get ready to conquer the world with your incredible app! 🌍
-
-
 
 ## Features
 
@@ -89,7 +85,7 @@ pre-commit install -t commit-msg
 
 ## 🚀 Deployment
 
-Easily deploy your Next.js app with [Vercel](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=github&utm_campaign=next-enterprise) by clicking the button below:
+Easily deploy your Next.js app with [Vercel](https://vercel.com/new) by clicking the button below:
 
 ## 📃 Scripts Overview
 
@@ -195,7 +191,6 @@ While this boilerplate doesn't include a specific state management library, we b
 
 [Zustand](https://github.com/pmndrs/zustand) is a small, fast, and scalable state management library. It's designed to be simple and intuitive, making it a great choice for small to medium-sized projects. It's also optimized for bundle size, ensuring minimal impact on your app's performance.
 
-
 ## 💻 Environment Variables handling
 
 [T3 Env](https://env.t3.gg/) is a library that provides environmental variables checking at build time, type validation and transforming. It ensures that your application is using the correct environment variables and their values are of the expected type. You’ll never again struggle with runtime errors caused by incorrect environment variable usage.
@@ -236,8 +231,6 @@ Contributions are always welcome! To contribute, please follow these steps:
 4. Push your changes to the forked repository.
 5. Create a pull request, and we'll review your changes.
 
-
 ## 📜 License
 
 This project is licensed under the MIT License. For more information, see the [LICENSE](./LICENSE) file.
-
