@@ -1,6 +1,6 @@
 import { Badge } from "@/components/ui/badge"
 import { ExtendedUser } from "@/types"
-import { Card, CardContent, CardHeader } from "./ui/card"
+import { Card, CardContent, CardHeader } from "@/components/ui/card"
 
 interface UserInfoProps {
   user?: ExtendedUser
